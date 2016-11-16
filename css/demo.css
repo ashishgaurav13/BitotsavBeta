@@ -15,7 +15,6 @@
 .clearfix:after { clear: both; }
 
 body {
-	background: #333;
 	color: #fff;
 	font-weight: 400;
 	font-size: 1em;
@@ -29,7 +28,7 @@ a {
 }
 
 /* Demo colors */
-.demo-1 { background: #ef6e7e; }
+.demo-1 { background: #fff; }
 .demo-1 a { color: #be4856; }
 
 .demo-2 { background: #72d0f4; }
@@ -102,13 +101,14 @@ section {
 	-webkit-font-smoothing: antialiased;
 }
 
+/*
 .codrops-icon-drop:before {
 	content: "\e001";
 }
 
 .codrops-icon-prev:before {
 	content: "\e004";
-}
+}*/
 
 /* Demo Buttons Style */
 .codrops-demos {

@@ -13,6 +13,27 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/effect1.css" />
 		<script src="js/modernizr.custom.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.css" />
+        <style>
+            .section{
+                background-size: cover;
+            }
+            #home {
+                background-image: url("img/banners/Home.jpg");
+            }
+            #about {
+                background-image: url("img/banners/AboutUs.jpg");
+            }
+            #testimonials {
+                background-image: url("img/banners/Testimonials.jpg");
+            }
+            #team {
+                background-image: url("img/banners/OurTeam.jpg");
+            }
+            #others {
+                background-image: url("img/banners/BottomContactUs.jpg");
+            }
+        </style>
 	</head>
 	<body class="demo-1">
 		<div id="ip-container" class="ip-container">
@@ -31,18 +52,20 @@
 					</svg>
 				</div>
 			</header>
-			<!-- top bar -->
+			<!-- top bar
 			<div class="codrops-top clearfix">
+                <a class="codrops-icon codrops-icon-prev"></a>
 				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/FullscreenForm/"><span>Previous Demo</span></a>
 				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19535"><span>Back to the Codrops Article</span></a></span>
-			</div>
+			</div-->
 			<!-- main content -->
-			<div class="ip-main">
+			<div class="ip-main" id="fullpage">
 				<nav class="codrops-demos">
-					<a class="current-demo" href="index.html">Demo 1</a>
-					<a href="index2.html">Demo 2</a>
-				</nav>
-				<h2>Make yourself at home.</h2>
+                    <a></a>
+					<!--a class="current-demo" href="index.html">Demo 1</a>
+					<a href="index2.html">Demo 2</a-->
+                </nav>
+				<!--h2>Make yourself at home.</h2>
 				<div class="browser clearfix">
 					<div class="box">
 						<span class="icon-bell"></span>
@@ -56,23 +79,19 @@
 						<span class="icon-cog"></span>
 						<p>No way! Hey Hey, me ok! Do Re Mi What Fa Si Ti Doi Nemo</p>
 					</div>
-				</div>
-				<!-- related demos -->
-				<section class="related">
-					<p>If you enjoyed this demo you might also like:</p>
-					<a href="http://tympanus.net/Development/HeaderEffects/">
-						<img src="img/relatedposts/HeaderEffects.jpg" alt="Header Effects"/>
-						<h3>On-Scroll Header Effects</h3>
-					</a>
-					<a href="http://tympanus.net/Development/ArticleIntroEffects/">
-						<img src="img/relatedposts/ArticleIntroEffects.png" alt="Article Intro Effects" />
-						<h3>Article Intro Effects</h3>
-					</a>
-				</section>
+				</div-->
+                <div class="section" id="home">Home</div>
+                <div class="section" id="about">About</div>
+                <div class="section" id="testimonials">Testimonials</div>
+                <div class="section" id="team">Team</div>
+                <div class="section" id="others">Others</div>
 			</div>
 		</div><!-- /container -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/classie.js"></script>
 		<script src="js/pathLoader.js"></script>
 		<script src="js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.js"></script>
+        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 	</body>
 </html>

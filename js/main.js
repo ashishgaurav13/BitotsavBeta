@@ -54,6 +54,10 @@
 					if( progress === 1 ) {
 						classie.remove( container, 'loading' );
 						classie.add( container, 'loaded' );
+                        $('#fullpage').fullpage({
+                            css3: true,
+                            scrollingSpeed: 1000
+                        });
 						clearInterval( interval );
 
 						var onEndHeaderAnimation = function(ev) {
