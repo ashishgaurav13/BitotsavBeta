@@ -60,9 +60,11 @@
 }
 
 .ip-header .ip-logo svg {
-	min-width: 320px;
-	max-width: 480px;
+	min-width: 40%;
+	max-width: 60%;
 	width: 25%;
+	position: absolute;
+
 }
 
 .ip-header .ip-logo svg path {
@@ -101,18 +103,6 @@
 	line-height: 1;
 }
 
-.browser {
-	margin: 0 auto;
-	padding-top: 8%;
-	min-height: 400px;
-	max-width: 1000px;
-	width: 100%;
-	border-radius: 8px;
-	background: #fff url(../img/browser.png) no-repeat 50% 0;
-	background-size: 100%;
-	color: #d3d3d3;
-}
-
 .box {
 	float: left;
 	padding: 3.5em;
@@ -125,7 +115,7 @@
 	font-family: 'Blokk', Arial, sans-serif;
 }
 
-[class^="icon-"]::before, 
+[class^="icon-"]::before,
 [class*=" icon-"]::before {
 	display: block;
 	margin-bottom: 0.5em;
@@ -188,8 +178,8 @@
 }
 
 .loaded .ip-logo {
-	-webkit-transform-origin: 50% 0;
-	transform-origin: 50% 0;
+	-webkit-transform-origin: 0% 0;
+	transform-origin: 0% 0;
 	-webkit-animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
 	animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
 }
@@ -278,10 +268,11 @@
 .no-js .ip-header {
 	position: relative;
 	min-height: 0px;
+	float : left;
 }
 
 .no-js .ip-header .ip-logo {
-	margin-top: 20px;
+	margin-top: 2%;
 	height: 180px;
 	opacity: 1;
 	-webkit-transform: none;
@@ -289,7 +280,7 @@
 }
 
 .no-js .ip-header .ip-logo svg path {
-	fill: #fff;
+	fill: #000;
 }
 
 /* Media queries */

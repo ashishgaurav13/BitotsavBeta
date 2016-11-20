@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
@@ -55,8 +55,11 @@
 						classie.remove( container, 'loading' );
 						classie.add( container, 'loaded' );
                         $('#fullpage').fullpage({
-                            css3: true,
-                            scrollingSpeed: 1000
+													anchors: ['section1', 'section2','section3' ,'section4','section5'],
+													menu: '#menu',
+													navigation: true,
+													navigationPosition: 'right',
+													navigationTooltips:  ['Home', 'About','Testimonials' ,'Team','Others']
                         });
 						clearInterval( interval );
 
@@ -82,7 +85,7 @@
 
 		loader.setProgressFn( simulationFn );
 	}
-	
+
 	function noscroll() {
 		window.scrollTo( 0, 0 );
 	}
